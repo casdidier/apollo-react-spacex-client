@@ -1,20 +1,21 @@
 {
-  "name": "spacex-client-react-apollo",
+  "name": "graphql-typescript-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@apollo/react-hooks": "^4.0.0",
-    "@graphql-codegen/cli": "^1.19.4",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "apollo-boost": "^0.4.9",
-    "codegen": "^0.1.0",
-    "graphql": "^15.4.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "@types/jest": "24.0.11",
+    "@types/node": "11.13.5",
+    "@types/react": "16.8.13",
+    "@types/react-dom": "16.8.4",
+    "apollo-boost": "^0.3.1",
+    "graphql": "^14.2.1",
+    "graphql-tag": "^2.10.1",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.4",
+    "react-apollo-hooks": "^0.4.5",
+    "react-dom": "^16.8.6",
+    "react-scripts": "2.1.8",
+    "typescript": "3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,28 +25,19 @@
     "codegen": "graphql-codegen --config codegen.yml"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "devDependencies": {
-    "@graphql-codegen/typescript-operations": "1.17.12",
-    "@graphql-codegen/typescript": "1.19.0",
-    "@graphql-codegen/typescript-react-apollo": "2.2.1",
-    "@graphql-codegen/typescript-graphql-files-modules": "1.18.1",
-    "@graphql-codegen/cli": "1.19.4"
+    "@graphql-codegen/cli": "^1.1.0",
+    "@graphql-codegen/typescript": "1.1.0",
+    "@graphql-codegen/typescript-operations": "1.1.0",
+    "@graphql-codegen/typescript-react-apollo": "1.1.0",
+    "dotenv-cli": "^2.0.0"
   }
 }
